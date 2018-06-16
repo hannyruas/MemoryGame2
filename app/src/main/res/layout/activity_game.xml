@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/textClock"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+
+        android:textSize="@android:dimen/app_icon_size"
+        android:fontFamily="Arial"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contextClickable="false"
+        android:defaultFocusHighlightEnabled="false"
+        android:textColor="@android:color/holo_orange_light" />
+
+    <LinearLayout
+        android:id="@+id/board"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/textClock">
+
+
+    <GridView
+        android:id="@+id/grid_cards"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:columnWidth="90dp"
+        android:gravity="bottom"
+        android:horizontalSpacing="8dp"
+
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="8dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textWin"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/board"
+        android:textSize="@android:dimen/app_icon_size"
+        android:fontFamily="Arial"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contextClickable="false"
+        android:defaultFocusHighlightEnabled="false"
+        android:textColor="@android:color/holo_red_light" />
+
+
+</RelativeLayout>
